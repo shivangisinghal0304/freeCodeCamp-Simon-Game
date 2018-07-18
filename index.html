@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="style.css">
+
+  <title>Simon Game</title>
+</head>
+
+<body>
+  <div class="wrapper clearfix">
+    <h1>Simon Game</h1>
+    <svg>
+      <circle id="out"></circle>
+      <path id="green"></path>
+      <path id="blue"></path>
+      <path id="red"></path>
+      <path id="yellow"></path>
+      <circle id="ins"></circle>
+    </svg>
+    <div class="manage">
+      <div class="manage-row">
+        <div class="count">
+          <div id="count-table" class="">--</div>
+          <div id="count-text" class="manage-text">Count</div>
+        </div>
+        <div class="start">
+          <button id="start-btn" class="start-btn manage-btn"></button>
+          <div id="start-text" class="manage-text">Start</div>
+        </div>
+        <div class="strict">
+          <div class="strict-ind"></div>
+          <button id="strict-btn" class="strict-btn manage-btn"></button>
+          <div id="strict-text" class="manage-text">Strict</div>
+        </div>
+      </div>
+      <div class="turn">
+        <div class="manage-text turn-text">OFF</div>
+        <div id="turn" class="turn-img">
+          <span id="off" class="turn-btn active"></span>
+          <span id="on" class="turn-btn"></span>
+        </div>
+        <div class="manage-text turn-text">ON</div>
+      </div>
+    </div>
+  </div>
+  <audio id="sound" src="#"></audio>
+  <script src="app.js"></script>
+</body>
+
+</html>
